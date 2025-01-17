@@ -15,7 +15,7 @@ Which is,
 
 **N - Node.js** - Used with express.js for server handling
 
-### **Project Features :- **
+### **Project Features :-**
 
 #### **Pages**
 1. **Authentication**
