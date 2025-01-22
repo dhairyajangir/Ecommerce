@@ -44,12 +44,12 @@ const Login = () => {
                     </div>
                 </div>
                 <div>
-                    <button type="submit" className="relative w-full h-6 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                    <button type="submit" className="relative w-full h-6 flex justify-center items-center  py-4 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
                         Submit
                     </button>
                 </div>
                 <p className="text-center">
-                  Do not have accout? <Link to ={'/signup'} className="text-blue-600">signup</Link>
+                  Do not have accout? <Link to ={'/signup'} className="text-blue-600">Signup</Link>
                 </p>
             </form>
         </div>
