@@ -1,10 +1,22 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error,setError]=useState("");
+
+  const handleSubmit = async(e)=>{
+    e.preventDefault();
+    try{
+      const response = await axios.post("http://localhost:8000/api/v2/user/login",{email,password});
+      console.log(response.data)
+    }catch(error){
+      setError("Invalid Credentials!")
+      console.error("Login Error",error)
+    }
+  }
 
 
   return (
@@ -16,7 +28,7 @@ const Login = () => {
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
                     <div className="mt-1">
@@ -44,13 +56,12 @@ const Login = () => {
                     </div>
                 </div>
                 <div>
-                    <button type="submit" className="relative w-full h-6 flex justify-center items-center  py-4 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                    <button type="submit" className="relative w-full h-6 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
                         Submit
                     </button>
                 </div>
-                <p className="text-center">
-                  Do not have accout? <Link to ={'/signup'} className="text-blue-600">Signup</Link>
-                </p>
+                <p className="text-center text-red-900">Donot have an account ? <Link to={'/signup'} className="text-blue-600">Sign up</Link>
+          </p>
             </form>
         </div>
       </div>
