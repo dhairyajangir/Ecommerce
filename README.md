@@ -1,57 +1,40 @@
-# E--commerce-website
+# E-commerce
 
-****
-## Milestone 1: Project Overview-
+## Milestone 1
 
-In this milestone, we demonstrated the working of MERN Stack. And by using the MERN stack we are going to bulid an e-commerce website
+In this we have seen the demonstration of the MERN
 
-Which is,
 
-**M - MongoDB** - Used to handle databases
+M-MongoDb
+E-Express JS[used as an API between client and server ]
+R-React[ this will be our client in case of the application]
+N-Node js we use for the running of express 
 
-**E - Express.js** -  Used to easily handle severs
+Authentication : login logout signup
+Product page : All the products 
+Orders Page : Shows orders for each user 
+payment gateway 
 
-**R - React.js** - Used for frontedend
-
-**N - Node.js** - Used with express.js for server handling
-
-### **Project Features :- **
-
-#### **Pages**
-1. **Authentication**
-   - Login / Signup functionality.
-   - User validation and session management.
-
-2. **Product Page**
-   - Displays all available products.
-   - Allows users to view product details.
-
-3. **Orders Page**
-   - Lists all orders made by the user.
-   - Displays order history and details.
-
-4. **Payment Gateway**
-   - Integrates a secure payment system.
-   - Handles transactions seamlessly.
-****
 
 ## Milestone 2: Project Overview - 
 
-In this milestone we learned how to setup a development enviroment for a backend project and also started with making Basic UI for Login page.-
 
-Key Learnings - 
+In this milestone2 we learned how to setup a develpoment enviroment for a backend project and also started with making bsic UI for login page .
 
-- Learned tailwind css for login page UI
-- Learned to setup basic tools used in backend like -
-  -  express
-  -  mongoose
-  -  dotenv
-  -  nodemon
-  -  cookie-parser
-  -  nodemailer etc...
-- And learned Basic react Routing.
 
-****
+
+Setting up of the frontend with following commands and packages
+
+tailwind CSS
+React (npm create vite@latest frontend)
+setting up of the backend with following commands and packages npm init || npm init -y
+
+express (npm i express)
+mongoose (npm i mongoose)
+cors (npm i cors)
+nodemon (npm i nodemon)
+
+
 
 ## Milestone 3: Project Overview - 
 
@@ -64,6 +47,8 @@ Key learnings -
 - Learned to use jsonWebTokens for authentications.
 - And finally learned to effectively handle the errors.
 
+
+
 ## Milestone 4: Project Overview -
 
 In this milestone we learned the following things -
@@ -75,6 +60,8 @@ Key learnings -
 - We learned password hashing using bcrypt
 - And lastly we learned about usage of jsonWebTokens for authentication.
 
+****
+
 ## Milestone 5: Project Overview -
 
 In this milestone we learned the following things -
@@ -82,4 +69,32 @@ In this milestone we learned the following things -
 Key learnings - 
 
 - We have created Signup page.
-- We have also implemented multer features
+- We have also implemented multer features.
+
+****
+
+## Milestone 6: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- We learned to hashe the password.
+- We also learned how to store the user credentials.
+- We also implemented the logic of if the user exists, if user not exists then we have created the user.
+
+****
+
+## Milestone 7: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- We learned and created Login Endpoint.
+- We have also created password and email validation.
+
+
+
+
+****
