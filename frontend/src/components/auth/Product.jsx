@@ -12,7 +12,6 @@ const Product = ({name,image,description,price})=>{
             <div className='w-full text-center'>
                 <p className="text-lgfont-bold text-gray-900 mb-4">{price}</p>
                 <button className="text-white bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition-all">More Info</button>
-
             </div>
         </div>
     )
