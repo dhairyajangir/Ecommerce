@@ -1,6 +1,7 @@
 
 import React, {useState, useEffect} from 'react'
 import {AiOutlinePlusCircle} from 'react-icons/ai'
+import axios from 'axios'
 
 const CreateProduct = () => {
     const [images, setImages] = useState([]);
@@ -34,7 +35,8 @@ const CreateProduct = () => {
         }
     },[previewImages])
 
-    const handleSubmit = (e) => {
+ 
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const productData = {
             name,

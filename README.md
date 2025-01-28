@@ -1,40 +1,58 @@
-# E-commerce
 
-## Milestone 1
+# E--commerce-website
 
-In this we have seen the demonstration of the MERN
+****
+## Milestone 1: Project Overview-
 
+In this milestone, we demonstrated the working of MERN Stack. And by using the MERN stack we are going to bulid an e-commerce website
 
-M-MongoDb
-E-Express JS[used as an API between client and server ]
-R-React[ this will be our client in case of the application]
-N-Node js we use for the running of express 
+Which is,
 
-Authentication : login logout signup
-Product page : All the products 
-Orders Page : Shows orders for each user 
-payment gateway 
+**M - MongoDB** - Used to handle databases
 
+**E - Express.js** -  Used to easily handle severs
+
+**R - React.js** - Used for frontedend
+
+**N - Node.js** - Used with express.js for server handling
+
+### **Project Features :- **
+
+#### **Pages**
+1. **Authentication**
+   - Login / Signup functionality.
+   - User validation and session management.
+
+2. **Product Page**
+   - Displays all available products.
+   - Allows users to view product details.
+
+3. **Orders Page**
+   - Lists all orders made by the user.
+   - Displays order history and details.
+
+4. **Payment Gateway**
+   - Integrates a secure payment system.
+   - Handles transactions seamlessly.
+****
 
 ## Milestone 2: Project Overview - 
 
+In this milestone we learned how to setup a development enviroment for a backend project and also started with making Basic UI for Login page.-
 
-In this milestone2 we learned how to setup a develpoment enviroment for a backend project and also started with making bsic UI for login page .
+Key Learnings - 
 
+- Learned tailwind css for login page UI
+- Learned to setup basic tools used in backend like -
+  -  express
+  -  mongoose
+  -  dotenv
+  -  nodemon
+  -  cookie-parser
+  -  nodemailer etc...
+- And learned Basic react Routing.
 
-
-Setting up of the frontend with following commands and packages
-
-tailwind CSS
-React (npm create vite@latest frontend)
-setting up of the backend with following commands and packages npm init || npm init -y
-
-express (npm i express)
-mongoose (npm i mongoose)
-cors (npm i cors)
-nodemon (npm i nodemon)
-
-
+****
 
 ## Milestone 3: Project Overview - 
 
@@ -47,7 +65,7 @@ Key learnings -
 - Learned to use jsonWebTokens for authentications.
 - And finally learned to effectively handle the errors.
 
-
+****
 
 ## Milestone 4: Project Overview -
 
@@ -94,9 +112,6 @@ Key learnings -
 - We learned and created Login Endpoint.
 - We have also created password and email validation.
 
-
-
-
 ****
 
 ## Milestone 8: Project Overview -
@@ -107,3 +122,12 @@ Key learnings -
 
 - We learned and created reusable card component with props for product details (e.g., name, image, price).
 - We have also setup a grid layout or flexbox for displaying multiple cards neatly.
+
+## Milestone 9: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- We Create the form for products.
+- We have also made this form functional such that this form will take multiple product images as input.
