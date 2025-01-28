@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const bcrypt = require("bcrypt"); 
-const User = require("../model/User");
+const User = require("../model/user");
 const jwt=require('jsonwebtoken')
 const sendMail=require('../utils/sendMail')
 const router = express.Router();
@@ -43,7 +43,7 @@ router.post(
         const user = await User.create({
             name,
             email,
-            password: hashedPassword,
+            password,
             avatar: {
                 public_id: req.file?.filename || "",
                 url: fileUrl,

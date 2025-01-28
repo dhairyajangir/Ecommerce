@@ -5,6 +5,8 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors=require('cors')
 const user = require("./controller/user");
+const product = require('./controller/product');
+
 
 
 // it's for ErrorHandling
@@ -21,10 +23,12 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
       path: "backend/config/.env",
     });
 };
+
 //import Routes
 
 
 app.use("/api/v2/user", user);
+app.use("/api/v2/product", product);
 
 
 module.exports = app;
