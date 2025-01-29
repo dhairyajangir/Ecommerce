@@ -38,27 +38,44 @@ const CreateProduct = () => {
  
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const productData = {
-            name,
-            description,
-            category,
-            tags,
-            stock,
-            price,
-            email,
-            images,
-        };
-        alert("Product Created Successfully");
-        console.log("Product Details:",productData);
-        setImages([]);
-        setName("");
-        setDescription("");
-        setCatogery("");
-        setTags("");
-        setPrice("");
-        setStock("");
-        setEmail("");
-    }
+        console.log("Hi")
+      
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("description", description);
+        formData.append("category", category);
+        formData.append("tags", tags);
+        formData.append("price", price);
+        formData.append("stock", stock);
+        formData.append("email", email);
+      
+        images.forEach((image) => {
+            formData.append("images", image);
+        });
+      
+        try {
+            const response = await axios.post("http://localhost:8000/api/v2/product/create-product", formData, {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                },
+            });
+      
+            if (response.status === 201) {
+                alert("Product created successfully!");
+                setImages([]);
+                setName("");
+                setDescription("");
+                setCategory("");
+                setTags("");
+                setPrice("");
+                setStock("");
+                setEmail("");
+            }
+        } catch (err) {
+            console.error("Error creating product:", err);
+            alert("Failed to create product. Please check the data and try again.");
+        }
+      };
 
     return(
         <div className='min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 rounded-full '>
@@ -92,7 +109,7 @@ const CreateProduct = () => {
                         <select className='w-full p-2 border rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-400 hover:shadow-lg transition-shadow duration-200' value={category} onChange={(e) => setCatogery(e.target.value)} required>
                             <option value="">Choose a Categroy</option>
                             {categoriesData.map((i) => (
-                                <option value={i.title} ley={i.title}>
+                                <option value={i.title} key={i.title}>
                                     {i.title}
                                 </option>
                             ))}
