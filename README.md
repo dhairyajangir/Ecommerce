@@ -115,7 +115,6 @@ Key learnings -
 
 - We Create the form for products.
 - We have also made this form functional such that this form will take multiple product images as input.
-=======
 
 ## Milestone 10: Project Overview -
 
