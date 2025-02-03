@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LoginPage ,SignupPage, Home, CreateProduct} from "./Routes";
-// import {Home} from '';
 import "./App.css";
 
 function App() {

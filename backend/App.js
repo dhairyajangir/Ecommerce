@@ -6,7 +6,8 @@ const bodyParser = require("body-parser");
 const cors=require('cors')
 const user = require("./controller/user");
 const product = require('./controller/product');
-
+const path = require("path");
+const db = require("./config/db");
 
 
 // it's for ErrorHandling
@@ -24,7 +25,8 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
     });
 };
 
-//import Routes
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+app.use('/products', express.static(path.join(__dirname, '/uploads')));
 
 
 app.use("/api/v2/user", user);

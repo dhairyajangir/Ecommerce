@@ -136,13 +136,17 @@ Key learnings -
 
 ****
 
+
 ## Milestone 10: Project Overview -
 
 In this milestone we learned the following things -
 
 Key learnings - 
+
 - Created the Endpoint for product and used it.
 - Checked the validations.
 - Created the new products using form (frontend) which was covered in milestone9.
 
+
 ****
+
