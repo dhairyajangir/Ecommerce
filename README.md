@@ -146,7 +146,7 @@ Key learnings -
 
 ****
 
-## Milestone 10: Project Overview -
+## Milestone 11: Project Overview -
 
 In this milestone we learned the following things -
 
