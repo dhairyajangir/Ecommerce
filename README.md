@@ -145,3 +145,14 @@ Key learnings -
 - Created the new products using form (frontend) which was covered in milestone9.
 
 ****
+
+## Milestone 10: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Write an endpoint that will send data from extract and send data from mongodb.
+- Receive data at frontend -How to display that data dynamically using product card created earlie
+
+****
