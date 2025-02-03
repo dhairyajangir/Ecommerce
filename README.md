@@ -123,6 +123,8 @@ Key learnings -
 - We learned and created reusable card component with props for product details (e.g., name, image, price).
 - We have also setup a grid layout or flexbox for displaying multiple cards neatly.
 
+****
+
 ## Milestone 9: Project Overview -
 
 In this milestone we learned the following things -
@@ -132,12 +134,13 @@ Key learnings -
 - We Create the form for products.
 - We have also made this form functional such that this form will take multiple product images as input.
 
+****
+
 ## Milestone 10: Project Overview -
 
 In this milestone we learned the following things -
 
 Key learnings - 
-
 - Created the Endpoint for product and used it.
 - Checked the validations.
 - Created the new products using form (frontend) which was covered in milestone9.
