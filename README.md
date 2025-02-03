@@ -123,6 +123,8 @@ Key learnings -
 - We learned and created reusable card component with props for product details (e.g., name, image, price).
 - We have also setup a grid layout or flexbox for displaying multiple cards neatly.
 
+****
+
 ## Milestone 9: Project Overview -
 
 In this milestone we learned the following things -
@@ -131,6 +133,9 @@ Key learnings -
 
 - We Create the form for products.
 - We have also made this form functional such that this form will take multiple product images as input.
+
+****
+
 
 ## Milestone 10: Project Overview -
 
@@ -145,13 +150,3 @@ Key learnings -
 
 ****
 
-## Milestone 11: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Write an endpoint that will send data from extract and send data from mongodb.
-- Receive data at frontend -How to display that data dynamically using product card created earlie
-
-****
