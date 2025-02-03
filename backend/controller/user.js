@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const bcrypt = require("bcrypt"); 
-const User = require("../model/user");
+const User = require("../model/User");
 const jwt=require('jsonwebtoken')
 const sendMail=require('../utils/sendMail')
 const router = express.Router();
@@ -77,8 +77,4 @@ router.post('/login',catchAsyncErrors(async(req,res,next)=>{
 
 }))
 
-
 module.exports = router;
-
-
-
