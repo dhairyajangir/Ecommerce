@@ -24,7 +24,7 @@ const productSchema = new Schema({
     email:{
         type:String,
         required:true,
-        match:[/.+@.+\..+/,"need valid email"]
+        match:[/.+@.+\..+/,"need a valid email"]
     },
     stock:{
         type:Number,
