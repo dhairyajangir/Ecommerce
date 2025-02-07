@@ -62,12 +62,12 @@ router.post('/login',catchAsyncErrors(async(req,res,next)=>{
     }
     const user = await User.findOne({email}).select("+password")
     if(!user){
-        return next(new ErrorHandler("Invaild Email or Password",401))
+        return next(new ErrorHandler("Invaild Email",401))
     }
     const isPasswordMatched = await bcrypt.compare(password,user.password)
     console.log("At auth","Password:",password,"Hash:",user.password)
     if(!isPasswordMatched){
-        return next(new ErrorHandler("Invaild Email or Password",401))
+        return next(new ErrorHandler("Invaild Password",401))
     }
     user.password = undefined;
     res.status(200).json({
