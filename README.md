@@ -153,6 +153,18 @@ In this milestone we learned the following things -
 Key learnings - 
 
 - Write an endpoint that will send data from extract and send data from mongodb.
-- Receive data at frontend -How to display that data dynamically using product card created earlie
+- Receive data at frontend -How to display that data dynamically using product card created earlier.
+
+****
+
+## Milestone 12: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Write an endpoint that will send data by filtering with my mail and send data from mongodb. 
+- Receive data at frontend -How to display that data dynamically using product card created earlier.
+
 
 ****
