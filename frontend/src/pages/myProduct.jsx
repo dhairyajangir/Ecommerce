@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "../components/auth/Product";
+import Myproduct from "../components/auth/myProduct";
 
 export default function MyProducts() {
     const [products, setProducts] = useState([]);
@@ -40,6 +41,7 @@ export default function MyProducts() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
                 {products.map((product) => (
                     <Product key={product._id} {...product} />
+                    <Myproduct key={product._id} {...product} />
                 ))}
             </div>
         </div>
