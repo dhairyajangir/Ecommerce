@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import {AiOutlinePlusCircle} from 'react-icons/ai'
 import axios from 'axios';
+const CreateProduct=()=>{
 import { useParams,useNavigate } from 'react-router-dom';
 
 const CreateProduct=()=>{
@@ -32,6 +33,10 @@ const CreateProduct=()=>{
     }
     
     useEffect(()=>{
+        return()=>{
+            previewImages.forEach((url)=>URL.revokeObjectURL(url))
+        }
+    },[previewImages]) //To avoid storage issues
         if(isEdit){
             axios.get(`http://localhost:8000/api/v2/product/product/${id}`).then((response)=>{
                 const p=response.data.product;
@@ -196,6 +201,7 @@ const CreateProduct=()=>{
                         <label className='pb-1 block text-gray-600 font-medium'>
                             Upload Images <span className='text-red-500'>*</span>
                         </label>
+                        <input type='file' id='upload' className='hidden' multiple onChange={handleImageChange} required/>
                         <input type='file' id='upload' className='hidden' multiple onChange={handleImageChange} required={!isEdit}/>
                         <label htmlFor='upload' className='cursor-pointer flex items-center justify-center w-[100px] h-[100px] bg-gray-700 rounded-md hover:bg-gray-300 transition-colors duration-200'>
                             <AiOutlinePlusCircle size={30} color='#555555'/>
@@ -203,7 +209,6 @@ const CreateProduct=()=>{
                         <div className='flex flex-wrap mt-2'>
                             {previewImages.map((img,index)=>(
                                 <img src={img} key={index} alt="Preview" className='w-[100px] h-[100px] object-cover m-2 rounded-md'/>
-
                             ))}
                         </div>
                     </div>
