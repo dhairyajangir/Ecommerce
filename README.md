@@ -173,3 +173,23 @@ Key learnings -
 
 ****
 
+## Milestone 13: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+-  write an endpoint that will update the existing data in MongoDB.
+- auto fill the form with previous data and give option to edit.
+
+****
+
+## Milestone 14: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+-  write an endpoint that delete the product with specific ID from MongoDB.
+
+****
