@@ -3,7 +3,7 @@ import {AiOutlinePlusCircle} from 'react-icons/ai'
 import axios from 'axios';
 const CreateProduct=()=>{
 import { useParams,useNavigate } from 'react-router-dom';
-
+import NavBar from '../components/auth/nav'
 const CreateProduct=()=>{
     const {id}=useParams();
     const navigate=useNavigate();
@@ -114,6 +114,8 @@ const CreateProduct=()=>{
       };
       
     return(
+        <>
+        <NavBar/>
         <div className='min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300'>
             <div className='w-[90%] max-w-[500px] bg-white shadow-md h-auto rounded-md p-6 mx-auto mt-8 sm:mt-16 lg:mt-24'>
                 <h5 className='text-[24px] font-bold text-center mb-4 text-gray-700'>
@@ -220,6 +222,7 @@ const CreateProduct=()=>{
             </div>
 
         </div>
+                        </>
     )
 }
 
