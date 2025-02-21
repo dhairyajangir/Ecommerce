@@ -196,3 +196,27 @@ Key learnings -
 - How to add quantity and add to card button.
 
 ***
+
+## Milestone 17: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Edit the user schema to store cart products .
+- Write an end point to receive the product details and store in database.
+
+***
+
+## Milestone 18: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Create an endpoint to receive request from cart page.
+- Create an backend endpoint to fetch all the products inside cart with user mail.
+
+***
+
+
