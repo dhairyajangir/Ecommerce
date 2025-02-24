@@ -1,14 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts,ProductDetails,Cart} from "./Routes";
-
-
-import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts} from "./Routes";
-
-
-import { LoginPage ,SignupPage, Home, CreateProduct} from "./Routes";
-
-
-import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts} from "./Routes";
+import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts,ProductDetails, Cart, Profile} from "./Routes";
 
 import "./App.css";
 
@@ -26,6 +17,7 @@ function App() {
         <Route path="/my-products" element={<MyProducts/>}/>
         <Route path="/product/:id" element={<ProductDetails/>}/>
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/profile" element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
   );

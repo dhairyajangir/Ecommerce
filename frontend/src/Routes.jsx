@@ -5,6 +5,7 @@ import CreateProduct from "./pages/createProduct";
 import MyProducts from "./pages/myProduct";
 import ProductDetails from "./pages/productDetails";
 import Cart from "./pages/cart";
-export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart};
-export { LoginPage, SignupPage, Home , CreateProduct, MyProducts};
-export { LoginPage, SignupPage, Home , CreateProduct, MyProducts };
+import Profile from "./pages/profile";
+
+export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart , Profile};
+
