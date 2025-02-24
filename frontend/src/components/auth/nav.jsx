@@ -22,6 +22,7 @@ const NavBar = () => {
             { name: "My Products", path: "/my-products" },
             { name: "Add Products", path: "/create-product" },
             { name: "Cart", path: "/cart" },
+            { name: "Profile", path: "/profile" }
           ].map((link) => (
             <NavLink
               key={link.path}
@@ -48,10 +49,11 @@ const NavBar = () => {
         <div className="md:hidden bg-indigo-700 p-4 rounded-lg mt-2 shadow-md">
           <ul className="space-y-4">
             {[
-              { name: "Home", path: "/" },
+              { name: "Home", path: "/home" },
               { name: "My Products", path: "/my-products" },
               { name: "Add Products", path: "/create-product" },
               { name: "Cart", path: "/cart" },
+              { name: "Profile", path: "/profile" }
             ].map((link) => (
               <li key={link.path}>
                 <NavLink
