@@ -256,3 +256,15 @@ Key learnings -
 - Display profile photo, name, mail and addresses.
 
 ***
+
+## Milestone 21: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- create address form frontend page
+- Create an state that will store input address
+- when we click on add address in profile it should navigate to this form page.
+
+***
