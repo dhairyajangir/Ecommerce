@@ -256,3 +256,38 @@ Key learnings -
 - Display profile photo, name, mail and addresses.
 
 ***
+
+## Milestone 21: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- create address form frontend page
+- Create an state that will store input address
+- when we click on add address in profile it should navigate to this form page.
+
+***
+
+## Milestone 22: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- You need to create an endpoint that will receive the address from address form in frontend
+- Add the address to the address array inside user collection.
+
+***
+
+## Milestone 23: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Create an placeorder button inside cart page and navigate to select address page when clicked.
+- Create and select address page that will display all the available address and have an option to select one address.
+- Write an backend endpoint that will send all the addresses of the user.
+
+***
