@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts,ProductDetails, Cart, Profile, CreateAddress,SelectAddress} from "./Routes";
+import { LoginPage ,SignupPage, Home, CreateProduct,MyProducts,ProductDetails, Cart, Profile, CreateAddress,SelectAddress, OrderConfirmation} from "./Routes";
 
 import "./App.css";
 
@@ -18,6 +18,7 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/create-address" element={<CreateAddress/>}/>
         <Route path="/select-address" element={<SelectAddress/>}/>
+        <Route path="/order-confirmation" element={<OrderConfirmation/>}/>
       </Routes>
     </BrowserRouter>
   );

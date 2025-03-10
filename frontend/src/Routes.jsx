@@ -8,6 +8,7 @@ import Cart from "./pages/cart";
 import Profile from "./pages/profile";
 import CreateAddress from "./pages/createAddress";
 import SelectAddress from "./pages/selectAddress";
+import OrderConfirmation from "./pages/orderConfirmation";
 
-export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart , Profile, CreateAddress, SelectAddress };
+export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart , Profile, CreateAddress, SelectAddress, OrderConfirmation };
 

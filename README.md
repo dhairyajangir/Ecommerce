@@ -292,3 +292,16 @@ Key learnings -
 
 ***
 
+## Milestone 24: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- First we will display all the products we are ordering
+- Next we will display the address user selected to deliver
+- We will display the total value of the cart
+- We will have an place order button at the bottom.
+
+***
+
