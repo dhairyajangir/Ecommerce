@@ -27,7 +27,7 @@ const orders = require("./controller/order")
 
 app.use("/api/v2/user", user);
 app.use("/api/v2/product",product);
-app.use("/api/v2/order",orders);
+app.use("/api/v2/orders",orders);
 
 // it's for ErrorHandling
 app.use(ErrorHandler);
