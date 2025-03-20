@@ -305,3 +305,16 @@ Key learnings -
 
 ***
 
+## Milestone 25: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- You need to create an endpoint that will receive the products, user, address details
+- You will get the mail of the user using that you need to retrive the _id of the user
+- For each product the order will be different with same address
+- using order schema you created earlier you will store order details in mongodb order collection
+
+***
+
