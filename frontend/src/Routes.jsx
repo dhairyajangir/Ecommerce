@@ -9,6 +9,7 @@ import Profile from "./pages/profile";
 import CreateAddress from "./pages/createAddress";
 import SelectAddress from "./pages/selectAddress";
 import OrderConfirmation from "./pages/orderConfirmation";
+import MyOrdersPage from "./pages/myOrders";
 
-export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart , Profile, CreateAddress, SelectAddress, OrderConfirmation };
+export { LoginPage, SignupPage, Home , CreateProduct, MyProducts, ProductDetails, Cart , Profile, CreateAddress, SelectAddress, OrderConfirmation, MyOrdersPage };
 

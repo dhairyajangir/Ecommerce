@@ -318,3 +318,33 @@ Key learnings -
 
 ***
 
+## Milestone 26: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Create an backend endpoint that will help getting all the orders of the user.
+
+***
+
+## Milestone 27: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Create an frontend page that will display all the user orders.
+
+***
+
+## Milestone 28: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- The use will be able to cancel the placed orders.
+
+***
+
