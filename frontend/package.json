@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^8.8.2",
     "axios": "^1.7.9",
     "country-state-city": "^3.2.1",
     "lucide-react": "^0.475.0",
