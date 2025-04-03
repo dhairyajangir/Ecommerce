@@ -204,7 +204,7 @@ const OrderConfirmation = () => {
                   <PayPalScriptProvider
                     options={{
                       "client-id":
-                        "AfBYn9zuOy1XFRjG8BOecMeBTb2UZ-cJRI9KLdXwPaFCKFkTbG6lBO-T8U7Cii-cKwm6Lp9dix5b_6HO",
+                        "AfBYn9zuOy1XFRjG8BOecMeBTb2UZ-cJRI9KLdXwPaFCKFkTbG6lBO-T8U7Cii-cKwm6Lp9dix5b_6HO   ",
                     }}
                   >
                     <PayPalButtons
