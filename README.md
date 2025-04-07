@@ -359,3 +359,16 @@ Key learnings -
 
 ***
 
+## Milestone 30: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- After creating PayPal account and getting the UserID inside sandbox account.
+- Implement online payment using PayPal API using the client key you created earlier.
+- Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
+
+***
+
+
