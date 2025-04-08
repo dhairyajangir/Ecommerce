@@ -371,4 +371,18 @@ Key learnings -
 
 ***
 
+## Milestone 31: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Install an npm package called react-redux
+- create an new folder called store with two files store.js and userActions.js.
+- We will store user mail inside global state.
+- In store.js file configure an store with userReducer function that will handle global user email state.
+- Inside userActions.js file write an function called setEmail that will help in storing email state inside global state.
+- In Index.js file make sure to wrap APP component inside provider component with store as props.
+
+***
 
