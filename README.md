@@ -348,3 +348,40 @@ Key learnings -
 
 ***
 
+## Milestone 29: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Learn how to use PayPal API.
+- Learn how to Integrate online payments.
+
+***
+
+## Milestone 30: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- After creating PayPal account and getting the UserID inside sandbox account.
+- Implement online payment using PayPal API using the client key you created earlier.
+- Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
+
+***
+
+## Milestone 31: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Install an npm package called react-redux
+- create an new folder called store with two files store.js and userActions.js.
+- We will store user mail inside global state.
+- In store.js file configure an store with userReducer function that will handle global user email state.
+- Inside userActions.js file write an function called setEmail that will help in storing email state inside global state.
+- In Index.js file make sure to wrap APP component inside provider component with store as props.
+
+***
