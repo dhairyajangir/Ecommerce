@@ -385,3 +385,4 @@ Key learnings -
 - In Index.js file make sure to wrap APP component inside provider component with store as props.
 
 ***
+
