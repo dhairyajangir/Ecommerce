@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import Product from "../components/auth/Product";
 import Myproduct from "../components/auth/myProduct";
 import NavBar from "../components/auth/nav";
+import { useSelector } from 'react-redux'; // Import useSelector
 
 export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const email = "yummy@gmail.com"; //mail which is present in mongodb
+    const email = useSelector((state) => state.user.email); //mail which is present in mongodb
 
     useEffect(() => {
+        if (!email) return alert("Error in Display");
         fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)
             .then((res) => {
                 if (!res.ok) {

@@ -386,3 +386,23 @@ Key learnings -
 
 ***
 
+## Milestone 32: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- The use will be use redux to store the state and access in all the pages.
+
+***
+
+## Milestone 33: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- Learn how to create an JWT token.
+- How to store the tokens inside the cookie.
+
+***

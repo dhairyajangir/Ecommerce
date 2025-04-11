@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from '../components/auth/nav'; // Ensure correct casing
 import { useNavigate } from 'react-router-dom';
-
+import {useSelector} from 'react-redux'
 const SelectAddress = () => {
     const [addresses, setAddresses] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -11,13 +11,14 @@ const SelectAddress = () => {
     const navigate = useNavigate();
 
     // Replace with dynamic email in production
-    const userEmail = 'yummy@gmail.com';
+    //Retrieve email from Redux state
+    const email = useSelector((state) => state.user.email);
 
     useEffect(() => {
         const fetchAddresses = async () => {
             try {
                 const response = await axios.get('http://localhost:8000/api/v2/user/addresses', {
-                    params: { email: userEmail },
+                    params: { email },
                 });
 
                 if (response.status !== 200) {
@@ -47,11 +48,11 @@ const SelectAddress = () => {
         };
 
         fetchAddresses();
-    }, [userEmail]);
+    }, [email]);
 
     const handleSelectAddress = (addressId) => {
         // Navigate to Order Confirmation with the selected address ID and email
-        navigate('/order-confirmation', { state: { addressId, email: userEmail } });
+        navigate('/order-confirmation', { state: { addressId, email: email } });
     };
 
     // Render loading state

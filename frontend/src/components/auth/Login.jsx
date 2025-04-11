@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { setemail } from "../../../store/userAction"
+import { useNavigate } from "react-router-dom";
+
+// Ensure axios sends cookies with requests
+axios.defaults.withCredentials = true;
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error,setError]=useState("");
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
@@ -22,6 +28,7 @@ const Login = () => {
       // Assuming response contains a token or user data on successful login
       console.log(response.data);
       // Redirect or take some action upon successful login here
+      navigate("/home"); // Redirect to home page or dashboard
     } catch (error) {
       // Handle errors (e.g., invalid credentials)
       setError("There was an error logging in. Please check your credentials.");
