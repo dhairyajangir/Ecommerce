@@ -1,5 +1,7 @@
 const app=require('./App');
 const connectDatabase = require('./db/Database');
+const cors = require("cors");
+
 
 // Handling uncaught Exception
 process.on("uncaughtException", (err) => {
@@ -8,6 +10,7 @@ process.on("uncaughtException", (err) => {
   });
   
 
+  
 // config
 if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({

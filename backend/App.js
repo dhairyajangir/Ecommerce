@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
 app.use("/",express.static("uploads"));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
-app.use(cors())
+app.use(cors({origin:["http://localhost:5173","http://localhost:5174"],credentials:true}))
 // config
 if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({
