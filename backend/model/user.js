@@ -56,7 +56,7 @@ const userSchema = new mongoose.Schema({
       required: true,
     },
  },
- cart: [  // ✅ Correctly placed at the root
+ cart: [ 
   {
       productId: {
           type: mongoose.Schema.Types.ObjectId,

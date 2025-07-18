@@ -3,9 +3,8 @@ import AddressCard from "../components/auth/AddressCard";
 import Nav from "../components/auth/nav";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { toast } from "react-toastify";
+import { toast } from "react-toastify"; // For modern notifications
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 import LoadingSpinner from "../components/common/LoadingSpinner";
 
 export default function Profile() {
@@ -23,36 +22,25 @@ export default function Profile() {
   const email = useSelector((state) => state.user.email);
 
   const fetchProfile = async () => {
-    if (!email) {
-      setError("No email found in session. Please log in again.");
-      setLoading(false);
-      return;
-    }
-
     setLoading(true);
-    setError(null);
-
     try {
-      const response = await axios.get(
-        `http://localhost:8000/api/v2/user/profile?email=${email}`
+      const res = await fetch(
+        `http://localhost:8000/api/v2/user/profile?email=${email}`,
+        {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+        }
       );
-
-      // Ensure response.data has the expected keys
-      if (!response.data.user || !response.data.addresses !== undefined) {
-        throw new Error("Unexpected response format");
-      }
-
-      setPersonalDetails(response.data.user);
-      setAddresses(response.data.addresses || []);
-      toast.success("Profile loaded", { position: "top-right", autoClose: 1500 });
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const data = await res.json();
+      if (!data.user) throw new Error("User data not found");
+      setPersonalDetails(data.user);
+      setAddresses(data.addresses || []);
+      toast.success("Profile loaded", { position: "top-right", autoClose: 2000 });
     } catch (err) {
       console.error("Profile fetch error:", err);
-      setError(
-        err.response?.data?.message ||
-          err.message ||
-          "Failed to load profile. Please try again."
-      );
-      toast.error("Could not load your profile", {
+      setError(err.message);
+      toast.error("Failed to load profile. Please refresh.", {
         position: "top-right",
         autoClose: 3000,
       });
@@ -63,11 +51,16 @@ export default function Profile() {
 
   useEffect(() => {
     fetchProfile();
-  }, [email]); // <--- Re-fetch if email changes
+  }, []);
 
   const handleAddAddress = () => {
     navigate("/create-address");
   };
+
+  // Default avatar URL
+  const avatarUrl = personalDetails.avatarUrl
+    ? `http://localhost:8000/${personalDetails.avatarUrl}`
+    : "https://cdn.vectorstock.com/i/500p/17/61/male-avatar-profile-picture-vector-10211761.jpg";
 
   if (loading) {
     return (
@@ -85,15 +78,13 @@ export default function Profile() {
     );
   }
 
-  const defaultAvatar =
-    "https://cdn.vectorstock.com/i/500p/17/61/male-avatar-profile-picture-vector-10211761.jpg";
-
   return (
     <>
       <Nav />
+      {/* Modern profile container */}
       <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-50 p-4 md:p-6 lg:p-8">
         <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
-          {/* Dark gradient section header */}
+          {/* Dark section for profile header (visual distinction) */}
           <div className="bg-gradient-to-r from-slate-800 to-slate-900 p-6">
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               My Profile
@@ -103,31 +94,33 @@ export default function Profile() {
             </p>
           </div>
 
-          {/* Personal Details */}
+          {/* Profile section */}
           <div className="p-6 md:p-8">
             <h2 className="text-2xl font-semibold text-slate-800 mb-4">
               Personal Details
             </h2>
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+              {/* Profile picture with animated border */}
               <div className="group flex-shrink-0 w-40 h-40 rounded-full border-[3px] border-transparent hover:border-blue-400 transition-all duration-300 flex items-center justify-center overflow-hidden bg-blue-50">
                 <img
-                  src={personalDetails.avatarUrl ? `http://localhost:8000/${personalDetails.avatarUrl}` : defaultAvatar}
+                  src={avatarUrl}
                   alt="profile"
                   className="w-full h-full object-cover group-hover:ring-4 group-hover:ring-blue-100 transition-all duration-300"
                   onError={(e) => {
-                    if (e.target.src !== defaultAvatar) {
-                      e.target.src = defaultAvatar;
-                    }
+                    e.target.onerror = null;
+                    e.target.src =
+                      "https://cdn.vectorstock.com/i/500p/17/61/male-avatar-profile-picture-vector-10211761.jpg";
                   }}
                 />
               </div>
+              {/* Details grid */}
               <div className="grid gap-4 md:gap-6 flex-grow">
                 <div className="p-4 rounded-xl shadow-sm bg-slate-50 hover:bg-blue-50 transition-all duration-200">
                   <div className="text-sm uppercase font-medium text-slate-500">
                     Name
                   </div>
                   <div className="text-xl font-medium text-slate-800 mt-1">
-                    {personalDetails.name || "--"}
+                    {personalDetails.name}
                   </div>
                 </div>
                 <div className="p-4 rounded-xl shadow-sm bg-slate-50 hover:bg-blue-50 transition-all duration-200">
@@ -135,7 +128,7 @@ export default function Profile() {
                     Email
                   </div>
                   <div className="text-xl font-medium text-slate-800 mt-1 break-all">
-                    {personalDetails.email || "--"}
+                    {personalDetails.email}
                   </div>
                 </div>
                 <div className="p-4 rounded-xl shadow-sm bg-slate-50 hover:bg-blue-50 transition-all duration-200">
@@ -143,14 +136,14 @@ export default function Profile() {
                     Mobile
                   </div>
                   <div className="text-xl font-medium text-slate-800 mt-1">
-                    {personalDetails.phoneNumber || "--"}
+                    {personalDetails.phoneNumber}
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Addresses */}
+          {/* Addresses section */}
           <div className="p-6 md:p-8 border-t border-slate-100">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-semibold text-slate-800">
@@ -178,8 +171,9 @@ export default function Profile() {
               </button>
             </div>
 
+            {/* Address list grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {!addresses?.length ? (
+              {addresses.length === 0 ? (
                 <div className="col-span-full bg-slate-50 p-6 rounded-xl text-center text-slate-500">
                   <p className="text-lg">No saved addresses yet.</p>
                   <button
@@ -189,11 +183,10 @@ export default function Profile() {
                     Add your first address
                   </button>
                 </div>
-              ) : (
-                addresses.map((address, index) => (
-                  <AddressCard key={index} {...address} />
-                ))
-              )}
+              ) : null}
+              {addresses.map((address, index) => (
+                <AddressCard key={index} {...address} />
+              ))}
             </div>
           </div>
         </div>
