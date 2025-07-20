@@ -2,3 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gradientText {
+  0%, 100% { color: #fff; }
+  50% { color: #c084fc; }
+}
+.animate-gradient-text {
+  animation: gradientText 3.5s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.05) translateY(-10px); }
+}
+.animate-blob {
+  animation: blob 4s ease-in-out infinite;
+}
+.animate-blob2 {
+  animation: blob 5s ease-in-out infinite;
+}
