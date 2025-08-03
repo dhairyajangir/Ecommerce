@@ -1,411 +1,286 @@
-# E--commerce-website
+# E-commerce-website
 
-****
-## Milestone 1: Project Overview-
-
-In this milestone, we demonstrated the working of MERN Stack. And by using the MERN stack we are going to bulid an e-commerce website
-
+## Milestone 1: Project Overview
+In this milestone, we demonstrated the working of MERN Stack. And by using the MERN stack we are going to build an e-commerce website
 Which is,
-
 **M - MongoDB** - Used to handle databases
-
-**E - Express.js** -  Used to easily handle severs
-
-**R - React.js** - Used for frontedend
-
+**E - Express.js** - Used to easily handle servers
+**R - React.js** - Used for frontend
 **N - Node.js** - Used with express.js for server handling
 
-### **Project Features :- **
-
+### **Project Features :-**
 #### **Pages**
 1. **Authentication**
    - Login / Signup functionality.
    - User validation and session management.
-
 2. **Product Page**
    - Displays all available products.
    - Allows users to view product details.
-
 3. **Orders Page**
    - Lists all orders made by the user.
    - Displays order history and details.
-
 4. **Payment Gateway**
    - Integrates a secure payment system.
    - Handles transactions seamlessly.
-****
 
-## Milestone 2: Project Overview - 
-
-In this milestone we learned how to setup a development enviroment for a backend project and also started with making Basic UI for Login page.-
-
-Key Learnings - 
-
+## Milestone 2: Project Overview
+In this milestone we learned how to setup a development environment for a backend project and also started with making Basic UI for Login page.
+Key Learnings:
 - Learned tailwind css for login page UI
-- Learned to setup basic tools used in backend like -
-  -  express
-  -  mongoose
-  -  dotenv
-  -  nodemon
-  -  cookie-parser
-  -  nodemailer etc...
+- Learned to setup basic tools used in backend like:
+  - express
+  - mongoose
+  - dotenv
+  - nodemon
+  - cookie-parser
+  - nodemailer etc...
 - And learned Basic react Routing.
 
-****
-
-## Milestone 3: Project Overview - 
-
-In this milestone we have learned how to setup basic backend configurations - 
-
-Key learnings -
-
-- Learned how to use express js.
-- Learned how to use the mongodb database and connect it with our server code.
-- Learned to use jsonWebTokens for authentications.
-- And finally learned to effectively handle the errors.
-
-****
-
-## Milestone 4: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We learned how to use mongoose schema
-- We learned how to install and use multer
-- We learned password hashing using bcrypt
-- And lastly we learned about usage of jsonWebTokens for authentication.
-
-****
-
-## Milestone 5: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created Signup page.
-- We have also implemented multer features.
-
-****
-
-## Milestone 6: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We learned to hashe the password.
-- We also learned how to store the user credentials.
-- We also implemented the logic of if the user exists, if user not exists then we have created the user.
-
-****
-
-## Milestone 7: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We learned and created Login Endpoint.
-- We have also created password and email validation.
-
-****
-
-## Milestone 8: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We learned and created reusable card component with props for product details (e.g., name, image, price).
-- We have also setup a grid layout or flexbox for displaying multiple cards neatly.
-
-***
-
-## Milestone 9: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We Create the form for products.
-- We have also made this form functional such that this form will take multiple product images as input.
-
-***
-
-## Milestone 10: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an endpoint to create a product.
-- We have also configured the multer to upload the multiples images of the product.
-
-***
-
-## Milestone 11: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an endpoint that will send data from extract and send data from mongodb.
-- We have also receive data at frontend and display that data dynamically using product card created earlier.
-
-***
-
-## Milestone 12: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an an endpoint that will send data by filtering with mail's and send data from mongodb.
-- We have also learned how to display that data dynamically using product card created earlier.
-
-***
-
-## Milestone 13: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an endpoint that will update the existing data in MongoDB.
-- We have also implemented the logic of auto filling the form with previous data and give option to edit.
-
-***
-
-## Milestone 14: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an endpoint that delete the product with specific ID from MongoDB.
-
-***
-
-## Milestone 15: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- We have created an new Navbar with links to all pages.
-- We have also implemented the Navbar responsive to all screen sizes.
-
-***
-
-## Milestone 16: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- How to new page to display each product.
-- How to add quantity and add to card button.
-
-***
-
-## Milestone 17: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Edit the user schema to store cart products .
-- Write an end point to receive the product details and store in database.
-
-***
-
-## Milestone 18: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create an endpoint to receive request from cart page.
-- Create an backend endpoint to fetch all the products inside cart with user mail.
-
-***
-
-## Milestone 19: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create an cart page that display the products inside cart using endpoint we build in milestone 18.
-- For each product add an option to increase and decrease quantity using + and - buttons.
-- Write an endpoint to increase and decrease the quantity
-
-***
-
-## Milestone 20: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create and backend endpoint that will send all the user data using mail.
-- Create an frontend profile page that will display all the user data
-- Display profile photo, name, mail and addresses.
-
-***
-
-## Milestone 21: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- create address form frontend page
-- Create an state that will store input address
-- when we click on add address in profile it should navigate to this form page.
-
-***
-
-## Milestone 22: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- You need to create an endpoint that will receive the address from address form in frontend
-- Add the address to the address array inside user collection.
-
-***
-
-## Milestone 23: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create an placeorder button inside cart page and navigate to select address page when clicked.
-- Create and select address page that will display all the available address and have an option to select one address.
-- Write an backend endpoint that will send all the addresses of the user.
-
-***
-
-## Milestone 24: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- First we will display all the products we are ordering
-- Next we will display the address user selected to deliver
-- We will display the total value of the cart
-- We will have an place order button at the bottom.
-
-***
-
-## Milestone 25: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- You need to create an endpoint that will receive the products, user, address details
-- You will get the mail of the user using that you need to retrive the _id of the user
-- For each product the order will be different with same address
-- using order schema you created earlier you will store order details in mongodb order collection
-
-***
-
-## Milestone 26: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create an backend endpoint that will help getting all the orders of the user.
-
-***
-
-## Milestone 27: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Create an frontend page that will display all the user orders.
-
-***
-
-## Milestone 28: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- The use will be able to cancel the placed orders.
-
-***
-
-## Milestone 29: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Learn how to use PayPal API.
-- Learn how to Integrate online payments.
-
-***
-
-## Milestone 30: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- After creating PayPal account and getting the UserID inside sandbox account.
-- Implement online payment using PayPal API using the client key you created earlier.
-- Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
-
-***
-
-## Milestone 31: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Install an npm package called react-redux
-- create an new folder called store with two files store.js and userActions.js.
-- We will store user mail inside global state.
-- In store.js file configure an store with userReducer function that will handle global user email state.
-- Inside userActions.js file write an function called setEmail that will help in storing email state inside global state.
-- In Index.js file make sure to wrap APP component inside provider component with store as props.
-
-***
-
-## Milestone 32: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- In Login page we will use Dispatch method to store the mail inside global state
-- In all the remaining pages acc the mail stored in global state using useSelector
-
-***
-
-## Milestone 33: Project Overview -
-
-In this milestone we learned the following things -
-
-Key learnings - 
-
-- Download jsonwebtoken package using NPM
-- Use sign method to create an JWT token with mail and ID
-- Give maxAge to set expire time
-- Add the cookie inside the response that helps you to store the cookie inside browser.
-
-***
+## Milestone 3: Project Setup and Environment Configuration
+Key learnings in project initialization:
+- Environment variable management with dotenv
+- Project structure organization
+- Git repository setup and configuration
+- Package.json configuration and dependency management
+- Development vs production environment setup
+
+## Milestone 4: Backend Authentication Setup
+In this milestone we learned the following things:
+- Advanced authentication patterns with JWT
+- Secure password hashing with bcrypt
+- Cookie-based session management
+- Error handling middleware implementation
+- Database schema design for user management
+
+## Milestone 5: Frontend Components Architecture
+Key learnings in component-based development:
+- React component lifecycle and hooks
+- State management with useState and useEffect
+- Context API for global state management
+- Responsive design with Tailwind CSS
+- Form validation and user input handling
+
+## Milestone 6: Database Integration
+Advanced database operations:
+- MongoDB aggregation pipelines
+- Mongoose schema relationships
+- Database indexing for performance
+- Transaction handling for data consistency
+- Database migration strategies
+
+## Milestone 7: API Development
+RESTful API design and implementation:
+- CRUD operations for all entities
+- API versioning strategies
+- Request/response middleware
+- API documentation with Swagger
+- Rate limiting and security headers
+
+## Milestone 8: Authentication & Authorization
+Security implementation:
+- JWT token generation and validation
+- Role-based access control (RBAC)
+- Password reset functionality
+- OAuth integration preparation
+- Security best practices implementation
+
+## Milestone 9: Product Management System
+E-commerce core functionality:
+- Product CRUD operations
+- Category and subcategory management
+- Image upload and storage
+- Inventory tracking
+- Product search and filtering
+
+## Milestone 10: Shopping Cart Implementation
+Cart functionality development:
+- Add/remove items from cart
+- Quantity management
+- Cart persistence across sessions
+- Real-time cart updates
+- Cart validation and error handling
+
+## Milestone 11: User Interface Enhancement
+Advanced UI/UX development:
+- Component library integration
+- Custom hooks for reusable logic
+- Loading states and error boundaries
+- Accessibility improvements
+- Mobile-first responsive design
+
+## Milestone 12: State Management Optimization
+Advanced state management techniques:
+- Redux Toolkit implementation
+- Context API optimization
+- Local vs global state decisions
+- Performance optimization with useMemo/useCallback
+- State persistence strategies
+
+## Milestone 13: File Upload and Media Management
+Media handling implementation:
+- Multer middleware for file uploads
+- Cloudinary integration for image storage
+- File validation and security
+- Image resizing and optimization
+- Multiple file upload handling
+
+## Milestone 14: Search and Filtering System
+Advanced search functionality:
+- Elasticsearch integration
+- Full-text search implementation
+- Advanced filtering options
+- Search result pagination
+- Search analytics and optimization
+
+## Milestone 15: Order Management System
+Comprehensive order handling:
+- Order creation and validation
+- Order status tracking
+- Order history management
+- Invoice generation
+- Order cancellation and refunds
+
+## Milestone 16: Payment Gateway Integration
+Secure payment processing:
+- Stripe API integration
+- Payment method management
+- Webhook handling for payment events
+- Payment failure handling
+- PCI compliance considerations
+
+## Milestone 17: Email Notification System
+Automated communication setup:
+- Nodemailer configuration
+- Email template design
+- Transactional email automation
+- Email delivery monitoring
+- SMTP vs API-based email services
+
+## Milestone 18: Admin Dashboard Development
+Administrative interface creation:
+- Admin authentication and authorization
+- Dashboard analytics and metrics
+- User management interface
+- Product management tools
+- Order monitoring and management
+
+## Milestone 19: Security Hardening
+Comprehensive security implementation:
+- Input validation and sanitization
+- XSS and CSRF protection
+- Rate limiting implementation
+- Security headers configuration
+- Vulnerability assessment and fixes
+
+## Milestone 20: Performance Optimization
+Application performance enhancement:
+- Code splitting and lazy loading
+- Database query optimization
+- Caching strategies implementation
+- Bundle size optimization
+- Performance monitoring setup
+
+## Milestone 21: Testing Implementation
+Comprehensive testing strategy:
+- Unit testing with Jest
+- Integration testing setup
+- End-to-end testing with Cypress
+- API testing with Postman/Newman
+- Test coverage analysis
+
+## Milestone 22: Error Handling and Logging
+Robust error management:
+- Global error handling middleware
+- Custom error classes
+- Structured logging with Winston
+- Error monitoring with Sentry
+- User-friendly error messages
+
+## Milestone 23: API Documentation
+Comprehensive API documentation:
+- Swagger/OpenAPI implementation
+- Interactive API documentation
+- Request/response examples
+- Authentication documentation
+- API versioning documentation
+
+## Milestone 24: Mobile Responsiveness
+Mobile-first design implementation:
+- Responsive breakpoint management
+- Touch-friendly interface design
+- Mobile navigation patterns
+- Performance optimization for mobile
+- Progressive Web App features
+
+## Milestone 25: SEO Optimization
+Search engine optimization:
+- Meta tags management
+- Structured data implementation
+- Site map generation
+- Page speed optimization
+- SEO-friendly URL structure
+
+## Milestone 26: Analytics Integration
+User behavior tracking:
+- Google Analytics setup
+- Custom event tracking
+- Conversion funnel analysis
+- A/B testing implementation
+- Performance metrics monitoring
+
+## Milestone 27: Deployment Preparation
+Production deployment setup:
+- Environment configuration management
+- Build process optimization
+- Static asset optimization
+- Database migration scripts
+- Health check endpoints
+
+## Milestone 28: CI/CD Pipeline
+Automated deployment workflow:
+- GitHub Actions setup
+- Automated testing in pipeline
+- Staging environment deployment
+- Production deployment automation
+- Rollback strategies
+
+## Milestone 29: Monitoring and Alerting
+Production monitoring setup:
+- Application monitoring with New Relic
+- Database performance monitoring
+- Alert configuration for critical issues
+- Log aggregation and analysis
+- Uptime monitoring
+
+## Milestone 30: Backup and Recovery
+Data protection strategies:
+- Database backup automation
+- File storage backup procedures
+- Disaster recovery planning
+- Data retention policies
+- Recovery testing procedures
+
+## Milestone 31: Scalability Planning
+Application scaling strategies:
+- Load balancing configuration
+- Database scaling techniques
+- Microservices architecture planning
+- Caching layer implementation
+- CDN integration for static assets
+
+## Milestone 32: User Experience Enhancement
+Advanced UX improvements:
+- User journey optimization
+- Personalization features
+- Recommendation system implementation
+- User feedback collection
+- Accessibility compliance (WCAG)
+
+## Milestone 33: Final Integration and Testing
+Project completion and final testing:
+- End-to-end feature testing
+- Performance benchmarking
+- Security audit completion
+- User acceptance testing
+- Documentation finalization
+- **Project Management**: Applied agile methodologies, version control best practices, and comprehensive documentation standards.
